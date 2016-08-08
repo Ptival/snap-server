@@ -11,19 +11,11 @@ mkDerivation {
   pname = "snap-server";
   version = "1.0.0.0";
   src = ./.;
-  isLibrary = true;
-  isExecutable = true;
   libraryHaskellDepends = [
     attoparsec base blaze-builder bytestring bytestring-builder
     case-insensitive clock containers filepath io-streams
     io-streams-haproxy lifted-base mtl network old-locale snap-core
     text time unix unix-compat vector
-  ];
-  executableHaskellDepends = [
-    attoparsec base blaze-builder bytestring bytestring-builder
-    case-insensitive clock containers directory io-streams
-    io-streams-haproxy lifted-base mtl network old-locale snap-core
-    text time transformers unix unix-compat vector
   ];
   testHaskellDepends = [
     attoparsec base base16-bytestring blaze-builder bytestring
