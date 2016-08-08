@@ -26,6 +26,7 @@ mkDerivation {
     test-framework-hunit test-framework-quickcheck2 text threads time
     transformers unix unix-compat vector
   ];
+  doCheck = false;
   homepage = "http://snapframework.com/";
   description = "A web server for the Snap Framework";
   license = stdenv.lib.licenses.bsd3;
